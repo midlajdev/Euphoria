@@ -1279,6 +1279,11 @@ header {
     .image-container img {
         height: 250px;
     }
+    .wishlist-btn img {
+        width: 16px;
+        height: 16px;
+    }
+    
 }
 
 @media screen and (max-width: 768px) {
