@@ -177,9 +177,6 @@ header {
         font-size: 16px;
     }
 
-    #spotlight {
-        height: calc(100vh - 80px);     
-    }
     /* .search-bar{
         width: 100px;
     } */
@@ -197,17 +194,15 @@ header {
     padding-left: 48px;
     overflow: hidden;
 
-
-    
 }
 
 #spotlight .wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content:space-between;
     position: relative;
     overflow: hidden;
-    
+    height: inherit;
 }
 
 .spotlight-content {
@@ -290,10 +285,11 @@ header {
 }
 
 .slider-line {
-    width: 120px;
+    width: 100px;
     height: 5px;
     background: rgba(255, 255, 255, 0.3);
     position: relative;
+    border-radius: 25px;
 }
 
 .slider-progress {
@@ -303,6 +299,7 @@ header {
     height: 100%;
     width: 33%;     
     background: #fff;
+    border-radius: 25px;
 }
 
 @media screen and (max-width: 980px){
@@ -323,7 +320,7 @@ header {
     }
 
     #spotlight .title {
-        font-size: 48px;
+        font-size: 40px;
     }
 
     #spotlight .subtitle {
@@ -345,14 +342,14 @@ header {
     }
 
     .slider-line {
-        width: 150px;
+        width: 100px;
     }
 }
 
 @media screen and (max-width: 480px) {
     .spotlight-content {
-        padding: 20px 0;
-        margin-top: 40px;
+        padding:20px 0 20px 0;
+        margin-top: 48px;
     }
 
     #spotlight .category {
@@ -370,6 +367,8 @@ header {
 
     .shop-now-btn {
         padding: 8px 16px;
+        font-size: 12px;
+        
     }
 
     .prev-btn,
@@ -387,7 +386,7 @@ header {
     }
 
     .slider-line {
-        width: 120px;
+        width: 90px;
     }
 }
 
