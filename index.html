@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Euphoria | Shop & Clothing</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
@@ -84,35 +85,77 @@
         </section>
 
         <!-- New Arrival Section -->
-        <section id="new-arrival">
-            <div class="wrapper">
-                <div class="section-header">
-                    <h2><span class="highlight"></span> New Arrival</h2>
-                </div>
-                <div class="products-section">
-                    <img src="assets/images/arrow-left.svg" alt="Previous" class="nav-arrow prev">
-                    <div class="products-container">
-                        <div class="product-card">
-                            <a href="#"><img src="assets/images/img-1.jpg" alt="Knitted Joggers"></a>
-                            <h3>Knitted Joggers</h3>
-                        </div>
-                        <div class="product-card">
-                            <a href="#"><img src="assets/images/img-2.jpg" alt="Full Sleeve"></a>
-                            <h3>Full Sleeve</h3>
-                        </div>
-                        <div class="product-card">
-                            <a href="#"><img src="assets/images/img-3.jpg" alt="Active T-Shirts"></a>
-                            <h3>Active T-Shirts</h3>
-                        </div>
-                        <div class="product-card">
-                            <a href="#"><img src="assets/images/img-4.jpg" alt="Urban Shirts"></a>
-                            <h3>Urban Shirts</h3>
+         <section id="new-arrival">
+        <div class="wrapper">
+            <div class="section-header">
+                <h2><span class="highlight"></span> New Arrival</h2>
+            </div>
+                <div class="products-section swiper">
+                     <div class="swiper-container">
+                        <div class="products-container swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="product-card">
+                                    <a href="#"><img src="assets/images/img-1.jpg" alt="Knitted Joggers"></a>
+                                    <h3>Knitted Joggers</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-card">
+                                    <a href="#"><img src="assets/images/img-2.jpg" alt="Full Sleeve"></a>
+                                    <h3>Full Sleeve</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-card">
+                                    <a href="#"><img src="assets/images/img-3.jpg" alt="Active T-Shirts"></a>
+                                    <h3>Active T-Shirts</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-card">
+                                    <a href="#"><img src="assets/images/img-4.jpg" alt="Urban Shirts"></a>
+                                    <h3>Urban Shirts</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-card">
+                                    <a href="#"><img src="assets/images/img-1.jpg" alt="Knitted Joggers"></a>
+                                    <h3>Knitted Joggers</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-card">
+                                    <a href="#"><img src="assets/images/img-2.jpg" alt="Full Sleeve"></a>
+                                    <h3>Full Sleeve</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-card">
+                                    <a href="#"><img src="assets/images/img-3.jpg" alt="Active T-Shirts"></a>
+                                    <h3>Active T-Shirts</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-card">
+                                    <a href="#"><img src="assets/images/img-4.jpg" alt="Urban Shirts"></a>
+                                    <h3>Urban Shirts</h3>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <img src="assets/images/arrow-right.svg" alt="Next" class="nav-arrow next">
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev">
+                        <img src="assets/images/arrow-left.svg" alt="Previous" class="nav-arrow prev">
+
+                    </div>
+                    <div class="swiper-button-next">
+                        <img src="assets/images/arrow-right.svg" alt="Next" class="nav-arrow next">
+                    </div>
                 </div>
             </div>
-        </section>
+            
+        </div>
+    </section>
 
         <!-- Fashion Promo Section -->
         <section id="fashion-promo">
@@ -393,74 +436,103 @@
         </section>
 
         <!-- Feedback Section -->
-        <section id="feedback">
+         <section id="feedback">
             <div class="wrapper">
                 <div class="section-header">
                     <h2><span class="highlight"></span> Feedback</h2>
                 </div>
-                <div class="feedback-container">
-                    <div class="feedback-card">
-                        <div class="user-info">
-                            <div class="user-profile">
-                                <img src="assets/images/span-1.svg" alt="Floyd Miles" class="user-image">
-                                <div class="user-details">
-                                    <h3>Floyd Miles</h3>
+                <div class="feedback-sec swiper">
+                    <div class="feedback-swiper-container">
+                        <div class="feedback-container swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="feedback-card">
+                                    <div class="user-info">
+                                        <div class="user-profile">
+                                            <img src="assets/images/span-1.svg" alt="Floyd Miles" class="user-image">
+                                            <div class="user-details">
+                                                <h3>Floyd Miles</h3>
+                                            </div>
+                                        </div>
+                                        <div class="rating">
+                                            <img src="assets/images/star.svg" alt="star">
+                                            <img src="assets/images/star.svg" alt="star">
+                                            <img src="assets/images/star.svg" alt="star">
+                                            <img src="assets/images/star.svg" alt="star">
+                                            <img src="assets/images/star.svg" alt="star" class="inactive">
+                                        </div>
+                                    </div>
+                                    <p class="feedback-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                                 </div>
                             </div>
-                            <div class="rating">
-                                <img src="assets/images/star.svg" alt="star">
-                                <img src="assets/images/star.svg" alt="star">
-                                <img src="assets/images/star.svg" alt="star">
-                                <img src="assets/images/star.svg" alt="star">
-                                <img src="assets/images/star.svg" alt="star" class="inactive">
-                            </div>
-                        </div>
-                        <p class="feedback-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet</p>
-                    </div>
 
-                    <div class="feedback-card">
-                        <div class="user-info">
-                            <div class="user-profile">
-                                <img src="assets/images/span-2.svg" alt="Ronald Richards" class="user-image">
-                                <div class="user-details">
-                                    <h3>Ronald Richards</h3>
+                            <div class="swiper-slide">
+                                <div class="feedback-card">
+                                    <div class="user-info">
+                                        <div class="user-profile">
+                                            <img src="assets/images/span-2.svg" alt="Ronald Richards" class="user-image">
+                                            <div class="user-details">
+                                                <h3>Ronald Richards</h3>
+                                            </div>
+                                        </div>
+                                        <div class="rating">
+                                            <img src="assets/images/star.svg" alt="star">
+                                            <img src="assets/images/star.svg" alt="star">
+                                            <img src="assets/images/star.svg" alt="star">
+                                            <img src="assets/images/star.svg" alt="star">
+                                            <img src="assets/images/star.svg" alt="star" class="inactive">
+                                        </div>
+                                    </div>
+                                    <p class="feedback-text">ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                                 </div>
                             </div>
-                            <div class="rating">
-                                <img src="assets/images/star.svg" alt="star">
-                                <img src="assets/images/star.svg" alt="star">
-                                <img src="assets/images/star.svg" alt="star">
-                                <img src="assets/images/star.svg" alt="star">
-                                <img src="assets/images/star.svg" alt="star" class="inactive">
-                            </div>
-                        </div>
-                        <p class="feedback-text">ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                    </div>
 
-                    <div class="feedback-card">
-                        <div class="user-info">
-                            <div class="user-profile">
-                                <img src="assets/images/span-3.svg" alt="Savannah Nguyen" class="user-image">
-                                <div class="user-details">
-                                    <h3>Savannah Nguyen</h3>
+                            <div class="swiper-slide">
+                                <div class="feedback-card">
+                                    <div class="user-info">
+                                        <div class="user-profile">
+                                            <img src="assets/images/span-3.svg" alt="Savannah Nguyen" class="user-image">
+                                            <div class="user-details">
+                                                <h3>Savannah Nguyen</h3>
+                                            </div>
+                                        </div>
+                                        <div class="rating">
+                                            <img src="assets/images/star.svg" alt="star">
+                                            <img src="assets/images/star.svg" alt="star">
+                                            <img src="assets/images/star.svg" alt="star">
+                                            <img src="assets/images/star.svg" alt="star" class="inactive">
+                                            <img src="assets/images/star.svg" alt="star" class="inactive">
+                                        </div>
+                                    </div>
+                                    <p class="feedback-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                                 </div>
                             </div>
-                            <div class="rating">
-                                <img src="assets/images/star.svg" alt="star">
-                                <img src="assets/images/star.svg" alt="star">
-                                <img src="assets/images/star.svg" alt="star">
-                                <img src="assets/images/star.svg" alt="star" class="inactive">
-                                <img src="assets/images/star.svg" alt="star" class="inactive">
+
+                            <div class="swiper-slide">
+                                <div class="feedback-card">
+                                    <div class="user-info">
+                                        <div class="user-profile">
+                                            <img src="assets/images/span-2.svg" alt="Ronald Richards" class="user-image">
+                                            <div class="user-details">
+                                                <h3>Ronald Richards</h3>
+                                            </div>
+                                        </div>
+                                        <div class="rating">
+                                            <img src="assets/images/star.svg" alt="star">
+                                            <img src="assets/images/star.svg" alt="star">
+                                            <img src="assets/images/star.svg" alt="star">
+                                            <img src="assets/images/star.svg" alt="star">
+                                            <img src="assets/images/star.svg" alt="star" class="inactive">
+                                        </div>
+                                    </div>
+                                    <p class="feedback-text">ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                                </div>
                             </div>
+
                         </div>
-                        <p class="feedback-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                     </div>
+                    <div class="swiper-pagination"></div>
                 </div>
-                <div class="feedback-nav">
-                    <span class="nav-dot active"></span>
-                    <span class="nav-dot"></span>
-                    <span class="nav-dot"></span>
-                </div>
+                
             </div>
         </section>
 
@@ -534,7 +606,16 @@
                     </div>
                     <div class="categories-toggle">
                         <p>Popular Categories</p>
-                        <img src="assets/images/arrow-down.svg" alt="Arrow">
+                        <img src="assets/images/arrow-down.svg" alt="Arrow" class="toggle-arrow-icon">
+                    </div>
+                    <div class="categories-expand">
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Track Order</a></li>
+                            <li><a href="#">Returns & Refunds</a></li>
+                            <li><a href="#">FAQ's</a></li>
+                            <li><a href="#">Career</a></li>
+                        </ul>
                     </div>
                 </div>
 
@@ -544,6 +625,8 @@
             </div>
         </footer>
 
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>
