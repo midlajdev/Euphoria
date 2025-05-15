@@ -10,10 +10,10 @@ document.addEventListener('DOMContentLoaded', () => {
         nav.classList.toggle('active');
 
         if(nav.classList.contains('active')){
-            himg.src = '../assets/icons/cancel-icon.png'
+            himg.src = '/Euphoria/assets/icons/cancel-icon.png'
         }
         else{
-            himg.src = '../assets/icons/hamburger-icon.png'
+            himg.src = '/Euphoria/assets/icons/hamburger-icon.png'
         }
 
     });
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('click', (e) => {
         if (!nav.contains(e.target) && nav.classList.contains('active')) {
             nav.classList.remove('active');
-            himg.src = '../assets/icons/hamburger-icon.png'
+            himg.src = '/Euphoria/assets/icons/hamburger-icon.png'
 
         }
     });
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const sliderLeft = document.querySelector('.prev-btn');
     const sliderRight = document.querySelector('.next-btn');
     const spotlight = document.getElementById('spotlight');
-    const images = ['../assets/images/bg-1.jpg','../assets/images/bg-2.jpg','../assets/images/bg-3.jpg']
+    const images = ['/Euphoria/assets/images/bg-1.jpg','/Euphoria/assets/images/bg-2.jpg','/Euphoria/assets/images/bg-3.jpg']
     let currentIndex = 0;
     const progress = document.querySelector('.slider-progress');
 
@@ -65,10 +65,10 @@ document.addEventListener('DOMContentLoaded', () => {
     wishlists.forEach(wishlist =>{
         wishlist.addEventListener('click', (e) => {
             if(wishlist.src.includes('wishlist.svg')){
-                wishlist.src = '../assets/images/wishlist-fill.svg';
+                wishlist.src = '/Euphoria/assets/images/wishlist-fill.svg';
             }
             else{
-                wishlist.src = '../assets/images/wishlist.svg';
+                wishlist.src = '/Euphoria/assets/images/wishlist.svg';
             }
         })
     })
